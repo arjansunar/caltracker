@@ -1,0 +1,12 @@
+# Local
+*.local
+*.log*
+
+# Dist
+node_modules
+dist/
+.vinxi
+.output
+.vercel
+.netlify
+.wrangler
