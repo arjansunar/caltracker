@@ -14,7 +14,7 @@ export class Pglite extends Effect.Service<Pglite>()("Pglite", {
     const orm = drizzle({ client });
     const query = <R>(execute: (_: typeof orm) => Promise<R>) =>
       Effect.tryPromise({
-        try: (_) => execute(orm),
+        try: () => execute(orm),
         catch: (error) => new PgliteError({ cause: error }),
       });
     return { client, orm, query };
