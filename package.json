@@ -11,10 +11,12 @@
   },
   "dependencies": {
     "@electric-sql/pglite": "^0.3.3",
+    "@xstate/react": "^6.0.0",
     "drizzle-orm": "^0.44.2",
     "effect": "^3.16.8",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "xstate": "^5.20.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
